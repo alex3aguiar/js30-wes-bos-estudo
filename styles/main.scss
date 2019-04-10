@@ -1,0 +1,52 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(198, 232, 241);
+
+    .piano {
+
+        text-align: center;
+        display: -webkit-inline-box;
+
+        .key {
+            width: 70px;
+            height: 80px;
+            background-color:  rgb(5, 161, 73);
+            margin: 5px;
+            text-align: center;
+            display: flex;
+            vertical-align: 0%;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all  0.1s;
+            border-radius: 10px;
+            box-shadow: 2px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            &:hover{
+                transform: scale(1.05);
+                background-color:  rgb(77, 160, 109);
+                box-shadow: 0 3px 6px rgba(0,0,0,0.30), 0 3px 6px rgba(0,0,0,0.23);
+            }
+            .playing{
+                transform: scale(1.5);
+                background-color: rgb(189, 236, 203);
+                box-shadow: 0 3px 6px rgba(0,0,0,0.50), 0 3px 6px rgba(0,0,0,0.23);
+            }
+
+
+
+
+
+        }
+    }
+
+
+}
